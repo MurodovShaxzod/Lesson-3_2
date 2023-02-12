@@ -103,6 +103,7 @@ h2 {
 
 .content-img {
   margin-bottom: 44px;
+  padding: 0;
 }
 
 .content-text h2 {
@@ -232,6 +233,11 @@ span {
 
   .content {
     justify-content: space-between;
+  }
+
+  .content-img {
+    margin: 0;
+    padding: 0;
   }
 
   .content-text h2 {
