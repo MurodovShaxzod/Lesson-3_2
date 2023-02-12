@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --body-color: #fff;
+  --primary-color: #fff;
+  --text-color: #111517;
+  --bg-img-dark-btn: url(/img/moon-black.png);
+  --search-color: #848484;
+}
+
+.dark {
+  --body-color: #202C36;
+  --primary-color: #2B3844;
+  --text-color: #FFFFFF;
+  --bg-img-dark-btn: url(/img/moon-wihte.png);
+  --search-color: #fff;
+}
+
+* a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Nunito Sans', sans-serif;
+  transition: all .4s;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header {
+  background-color: var(--primary-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+  padding: 24px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.dark-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.dark-btn::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: var(--bg-img-dark-btn);
+  position: relative;
+  right: 8px;
+  margin-left: 8px;
+}
+
+.header-main {
+  background-color: var(--body-color);
+}
+
+.header-main-back {
+  display: inline-block;
+  color: var(--text-color);
+  margin: 80px 0;
+  background-color: rgba(0, 0, 0, 0.055);
+}
+.header-main-back div {
+  padding: 10px 38px;
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+.header-main-back i {
+  margin-right: 10px;
+}
+
+.content {
+  justify-content: space-between;
+}
+
+.content-img {
+  margin-bottom: 44px;
+}
+
+.content-text h2 {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+ul {
+  padding: 0;
+}
+
+.content-text li {
+  list-style: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--text-color);
+}
+
+span {
+  font-weight: 600;
+}
+
+.countries {
+  display: block;
+}
+
+.france {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0px 60px 0px;
+}
+
+.france .france-a {
+  margin-left: 0px;
+}
+
+.france a {
+  background-color: var(--primary-color);
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.104931);
+  border-radius: 2px;
+  color: var(--text-color);
+  padding: 5px 27px 4px 27px;
+  margin-left: 10px;
+}
+
+.content-img img {
+  width: 100%;
+}
+
+
+
+
+@media (min-width: 75rem) {
+  body {
+    margin: 0;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: all .4s;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+    padding: 24px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+  
+  h2 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    margin: 0;
+    color: var(--text-color);
+  }
+  
+  .dark-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  .dark-btn::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: var(--bg-img-dark-btn);
+    position: relative;
+    right: 8px;
+    margin-left: 8px;
+  }
+
+  .header-main {
+    background-color: var(--body-color);
+  }
+
+  .header-main-back {
+    display: inline-block;
+    color: var(--text-color);
+    margin: 80px 0;
+    background-color: rgba(0, 0, 0, 0.055);
+  }
+  .header-main-back div {
+    padding: 10px 38px;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+  }
+  .header-main-back i {
+    margin-right: 10px;
+  }
+
+  .content {
+    justify-content: space-between;
+  }
+
+  .content-text h2 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .content-text li {
+    list-style: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--text-color);
+  }
+
+  span {
+    font-weight: 600;
+  }
+
+  .countries {
+    display: inline;
+  }
+
+  .france {
+    display: inline;
+  }
+
+  .content-text:nth-child(2) a {
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.104931);
+    border-radius: 2px;
+    color: var(--text-color);
+    padding: 5px 27px 4px 27px;
+    margin-left: 10px;
+  }
+
+  .content-img img {
+    width: 100%;
+  }
+}
